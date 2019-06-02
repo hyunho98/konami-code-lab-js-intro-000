@@ -18,10 +18,10 @@ function init() {
   input.addEventListener(`keydown`, function(e) {
     if (e.key === codes[index]) {
       index++;
-      console.log(e.key);
+      
       if (index === codes.length) {
         alert("Congratulations!");
-        console.log('yes');
+
         index = 0;
       }
     } else {
