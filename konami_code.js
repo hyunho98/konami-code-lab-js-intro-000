@@ -13,21 +13,18 @@ const codes = [
 
 function init() {
   let index = 0;
-  const input = document.querySelector(`input`);
 
-  input.addEventListener(`keydown`, function(e) {
-    const key = e.key;
+  const key = e.key;
 
-    if (key === codes[index]) {
-      index++;
+  if (key === codes[index]) {
+    index++;
 
-      if (index === codes.length) {
-        alert("Congratulations!");
+    if (index === codes.length) {
+      alert("Congratulations!");
 
-        index = 0;
-      }
-    } else {
-        index = 0;
+      index = 0;
     }
-  });
+  } else {
+      index = 0;
+  }
 }
