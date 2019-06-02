@@ -21,7 +21,7 @@ function init() {
       console.log(e.key);
       if (index === codes.length) {
         alert("Congratulations!");
-
+        console.log('yes');
         index = 0;
       }
     } else {
