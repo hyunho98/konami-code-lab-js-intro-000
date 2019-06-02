@@ -13,8 +13,9 @@ const codes = [
 
 function init() {
   let index = 0;
+  const input = document.querySelector(`input`);
 
-  function onKeyDownHandler(e) {
+  input.addEventListener(`keydown`, function(e) {
     const key = e.key;
 
     if (key === codes[index]) {
@@ -28,5 +29,5 @@ function init() {
     } else {
         index = 0;
     }
-  }
+  });
 }
